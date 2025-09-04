@@ -1,0 +1,35 @@
+Algoritmo U3_TP1_Ejercicio_7
+	//Programa que calcule el área y el perímetro de un triángulo rectángulo; 
+	//El usuario debe proporcionar dos catetos;
+	//;
+	//Definicion de variables;
+	Definir cateto1, cateto2, hipotenusa Como Real;
+	Definir area_tri, perimetro_tri Como Real;	
+	//Inicializacion de variables;
+	cateto1 = 0;
+	cateto2 = 0;
+	hipotenusa = 0;
+	area_tri = 0;
+	perimetro_tri = 0;
+	//Mostrar en pantalla y ingreso por teclado 1;
+	Escribir "Calculadora de AREA y PERIMETRO, en TRIANGULO RECTANGULO.";
+	Escribir "Escriba el valor del PRIMER cateto, en cm.";
+	Leer cateto1;
+	Escribir "Escriba el valor del SEGUNDO cateto, en cm.";
+	Leer cateto2;
+	//Operaciones;
+	//Area trinagulo;
+	area_tri = (cateto1 * cateto2) / 2;
+	//Hipotenusa;
+	hipotenusa = raiz((cateto1^2) + (cateto2^2));
+	//Perimetro triangulo;
+	perimetro_tri = cateto1 + cateto2 + Hipotenusa;
+	//impresion en pantalla 2;
+	Escribir "Con los siguientes datos:";
+	Escribir "PRIMER cateto: ", cateto1, "cm";
+	Escribir "SEGUNDO cateto: ", cateto2, "cm";
+	Escribir "HIPOTENUSA: ", Hipotenusa, "cm";
+	Escribir "AREA del triangulo cuadrilatero solicitado: ", area_tri, "cm2";
+	Escribir "Y";
+	Escribir "PERIMETRO del triangulo cuadrilatero solicitado: ", perimetro_tri, "cm";
+FinAlgoritmo
